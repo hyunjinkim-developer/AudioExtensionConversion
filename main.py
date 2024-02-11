@@ -23,8 +23,9 @@ for song in directory:
         print(song_name)
         wav_audio = AudioSegment.from_file(song, format="wma")
 
+# https://stackoverflow.com/questions/36605571/convert-any-audio-to-mp3-format-using-python
 # # wave and raw don’t use ffmpeg
-
+# wav_audio = AudioSegment.from_file("audio.wav", format="wav")
 # raw_audio = AudioSegment.from_file("audio.wav", format="raw",
 #                                    frame_rate=44100, channels=2, sample_width=2)
 #
